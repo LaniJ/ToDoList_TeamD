@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: ;
+}
+.topnav{
+  background: #1a2e35;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.logo {
+  font-family: 'Arizonia', cursive;
+  color: #ff4f5a;
+}
+
+.AppName {
+  font-family: 'Arizonia', cursive;
+  color: #ff4f5a;
+  font-size: 50px;
+}
+
+.topnav ul{
+  float: right;
+  margin: 20px;
+  margin-top: 4px;
+}
+.topnav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 50px;
+}
+.topnav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    color: #ff4f5a;
+    background-repeat: repeat-x;
+    background-size: 30%;
+    border-bottom: 10;
+    padding-bottom: .5em;
+    text-decoration: none;
+  }
+
+ 
+.htfg{
+  background-image: url("reading_todo.jpg");
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 550px;
+  background-color: #fff;
+  padding: 50px;
+  position:relative;
+}
+.centered{
+  position: absolute;
+  top: 45%;
+  margin-top: -50px;
+  left: 55%;
+  margin-left: -100px;
+}
+h1{
+  font-size: 45px;
+  color: darkgray;
+}
+button{
+  margin-left: 200px;
+  margin-top: 25px;
+  padding: 6px 10px;
+  font-size: 18px;  
+  height: 35px;
+  width: 200px;
+  background-color: darkslategray;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  text-align: center;
+
+}
+
+/* button {
+  height: 35px;
+  background-color:#1a2e35;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px; 
+  margin-top: 25px;
+  margin: auto;
+  text-transform: uppercase;
+
+} */
+button:hover {
+  background-color: #ff4f5a;
+  color: #fff;
+}

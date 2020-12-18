@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanIt</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+
+<body>
+
+    <!-- <h1 class="title"> Things I need to do</h1>
+    <a href=""><button class="logoutBtn">Logout</button> </a> -->
+
+    <div id="header">
+        <h1 class="title"> Things I need to do</h1>
+        <a href=""><button class="logout-btn" onclick="logOutBtn(event)" type="button">Log Out</button> </a>
+    </div>
+
+    <div class="all-tasks">
+        <h2 class="task-list-title"> My lists</h2>
+       <ul class="task-list" data-lists>
+        </ul>
+        
+        <form action="" data-new-list-form>
+            <button class="btn-list" aria-label="Create new list">+</button>
+            <input 
+            type="text" 
+            class="new-list" 
+            data-new-list-input
+            placeholder="New list name" 
+            aria-label="New list name"
+            />
+        </form>
+    </div>
+
+    <div class="to-do-list" data-list-display-container>
+        <div class="to-do-title">
+            <h2 class="list-title" data-list-title></h2>
+            <p class="task-count" data-list-count>0 tasks remaining</p>
+        </div>
+        
+        <div class="to-do-body">
+            <div class="tasks" data-tasks>
+                <!-- <div class="task"> 
+                    <input type="checkbox" id="task1">
+                    <label for="task1">
+                        <span class="custom-checkbox"></span>
+                        Arrange the files
+                    </label> 
+                </div> -->
+
+                <!-- <div class="tasks">
+                    <input type="checkbox" id="task2">
+                    <label for="task2">
+                        <span class="custom-checkbox"></span>
+                        Send an email
+                    </label>
+                </div> -->
+
+                <!-- <div class="tasks"> 
+                    <input type="checkbox" id="task3">
+                    <label for="task3">
+                        <span class="custom-checkbox"></span>
+                        Attend the meeting
+                    </label>
+                </div> -->
+
+            </div>
+            <div class="new-task-creator">
+                <form action="" data-new-task-form>
+                    <input type="text" data-new-task-input class="new-task" placeholder="new task name" aria-label="new task name">
+                    <button class="btn-task" aria-label="Create new task">+</button>
+                </form>
+            </div>
+
+            <div class="delete-task">
+                <button class="btn-delete" data-clear-complete-tasks-button>Clear completed tasks</button>
+                <button class="btn-delete" data-delete-list-button>Delete list</button>
+            </div>
+            
+        </div>
+       
+    </div>   
+
+    <!--Template - This clones our task-->
+<template id="task-template">
+    <div class="tasks"> 
+        <input type="checkbox"/>
+        <label>
+            <span class="custom-checkbox"></span>
+        </label>
+    </div>       
+</template>
+
+    <script type="text/javascript" src="mainPage.js"></script>
+</body>
+</html>
